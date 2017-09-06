@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Task.io</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">    
+        <script type="text/javascript" src="./create-task.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-toggleable-md bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Task.io</a>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">History</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-5 col-sm-12 ml-4 mr-5 my-4">
+                <form id="new-task-form">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-xs-12 col-form-label">Task Name</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input class="form-control" type="text" value="" id="task-name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-xs-12 col-form-label">Assigned to</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input class="form-control" type="text" value="" id="assigned-to">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-xs-12 col-form-label" for="due-date" >Due Date</label>
+                        <div class="col-sm-9 col-xs-12">
+                            <input class="form-control" type="date" value="" id="due-date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-3 col-sm-9">
+                            <button class="btn btn-primary" id="create-task" onclick="createTask">Create Task</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-5 col-sm-12 mr-4 ml-5 my-4">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Task Name</th>
+                                <th>Assigned to</th>
+                                <th>Date Created</th>
+                                <th>Due Date</th>
+                            </tr>    
+                        </thead>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</html>
