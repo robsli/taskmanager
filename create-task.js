@@ -9,29 +9,45 @@
         - Due Date
     */
     
+    window.onload = function() {
+        document.getElementById('create-task').addEventListener("click", function() {
+            let newTask = createTask();
+            updateTable(newTask);
+        });
+    };
 
-    // let createTaskButton = document.getElementById('createTask');
-    // if(createTaskButton) {
-    //     createTaskButton.addEventListener("click", createTask, false);
-    // }
 
     // Task Constructor: takes in array with 3 arguments
     function Task (taskObject) {
         this.name = taskObject[0];
         this.assignedTo = taskObject[1];
-        this.status = 'assigned';
         this.createdDate = new Date();
         this.dueDate = new Date(taskObject[2]);
+        this.status = 'assigned';
     };
 
     function createTask () {
-        console.log('In createTask() function');
         let taskName = document.getElementById('task-name').value;
         let assignedTo = document.getElementById('assigned-to').value;
         let dueDate = document.getElementById('due-date').value;
 
         let task = new Task([taskName, assignedTo, dueDate]);
-        console.log(task);
-        tasks.push(task);
-        console.log(tasks);
+
+        return task;
     };
+
+    function updateTable (newTask) {
+
+        tasks.push(newTask)
+
+        let tableBody = document.getElementById('task-table');
+        let newRow = tableBody.insertRow();
+
+        for (let i in newTask) {
+            let newCell = newRow.insertCell(-1);
+            let newElement = newCell.appendChild(document.createTextNode(newTask[i]));
+        }
+
+
+        console.log(tasks);
+    }
