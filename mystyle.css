@@ -1,0 +1,65 @@
+/* Google form style to form and table */
+html, body {
+    height: 100%;
+}
+
+nav {
+    background-color: white;
+}
+
+.document-background {
+    background-color: rgb(134, 130, 140);
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.document-container {
+    background-color: white;
+    max-width: 940px;
+    min-height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.60);
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+/* For creating own table from ul > li */
+/* .table-header {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: -20px;
+    padding: 10px 0 10px 15px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.table-content {
+    list-style: none;
+    margin-left: -20px;
+    padding: 0 0 0 15px;
+}
+
+.table-header li, .table-content li {
+    display: inline-block;
+}
+
+.table-element-task {
+    width: 25%;
+    text-align: left;
+}
+.table-element {
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+}
+
+.table-button-header {
+    display: inline-block;
+    width: 9%;
+    text-align: center;
+}
+
+.table-element-button {
+    display: inline-block;
+    width: 9%;
+    text-align: center;
+} */
