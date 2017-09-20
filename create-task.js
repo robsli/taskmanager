@@ -139,7 +139,10 @@
             tasks[editingTaskId] = updatedTaskVersion;
             dataStorage.updateStorage(tasks)
             updateTaskTable();
+<<<<<<< HEAD
             $('#editModal').modal('hide');
+=======
+>>>>>>> 51ae6a14e82fdd923e7954668f9cc3fc44c63c62
         };
     }
 
@@ -152,6 +155,9 @@
         tasks[taskId].lastUpdated = new Date();
         dataStorage.updateStorage(tasks);
         updateTaskTable();
+<<<<<<< HEAD
         $('#editModal').modal('hide');
+=======
+>>>>>>> 51ae6a14e82fdd923e7954668f9cc3fc44c63c62
     }
 }());
